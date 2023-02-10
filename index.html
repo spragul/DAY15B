@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .clc{
+        background-color:purple;
+        border: 3px solid green;
+        width: 217px;
+        height: 328px;
+    }
+    .display{
+        border: 3px solid orange;
+        background-color: pink;
+        color:blue;
+        width: 209px;
+        height: 70px;
+
+    }
+    .output{
+        display: flex;
+        align-items: center;
+
+    }
+    .c,.back_space {
+        color: red;
+        background-color: yellow;
+    }
+    .equal{
+        color:red;
+        background-color: yellow;
+        width:104px;
+        height: 50px;
+    }
+    .star,.divsion,.mines,.addtion,.dot{
+        color:red;
+        background-color: yellow;
+    }
+    .one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.zeroone,.zerotwo{
+        color:red;
+        background-color: yellow;
+    }
+    button{
+        width:50px;
+        height: 50px;
+    }
+    .ss{
+       color:green;
+       display: flex;
+        align-items:flex-start;
+    }
+</style>
+<body>
+
+    <div class="clc">
+        <div class="display">
+            <p class="screen ss" > </p>
+            <p class="output"> 0</p>
+        </div>
+        <div >
+            <div class="btn">
+                <button onclick="clear_screen(this)"class="c">c</button>
+                <button onclick="back_space1(this)"class="back_space">&#8592</button>
+                <button onclick="clicking(this)"class="dot">.</button>
+                <button onclick="clicking(this)"class="star">*</button>
+            </div>
+        </div>
+
+       <div>
+        <button onclick="clicking(this)"class="seven">7</button>
+        <button onclick="clicking(this)"class="eight">8</button>
+        <button onclick="clicking(this)"class="nine">9</button>
+        <button onclick="clicking(this)"class="divsion">/</button>
+       </div>
+       <div>
+        <button onclick="clicking(this)"class="four">4</button>
+        <button onclick="clicking(this)"class="five">5</button>
+        <button onclick="clicking(this)"class="six">6</button>
+        <button onclick="clicking(this)"class="mines">-</button>
+       </div>
+       <div>
+        <button onclick="clicking(this)"class="one ">1</button>
+        <button onclick="clicking(this)"class="two">2</button>
+        <button onclick="clicking(this)"class="three">3</button>
+        <button onclick="clicking(this)"class="addtion">+</button>
+       </div>
+       <div>
+        <button onclick="clicking(this)"class="zeroone">0</button>
+        <button onclick="clicking(this)"class="zerotwo">00</button>
+        <button onclick="evaluate1(this)"class="equal">=</button>
+       </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
